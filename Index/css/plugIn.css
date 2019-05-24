@@ -1,0 +1,16 @@
+.wrapper span{
+    display: block;
+    padding:8px;
+}
+.wrapper{
+    max-height: 200px;
+    overflow-y: scroll;
+    width: 200px;
+    border: 1px solid #ddd;
+}
+input{
+margin: 40px;
+height: 40px;
+padding: 10px;
+
+}

@@ -1,0 +1,45 @@
+.mainBtn{
+    background: #6059f6;
+    border-radius:20px;
+    font-weight: 500;
+    padding: 10px 20px;
+
+}
+.menu li{
+    padding: 9px;
+}
+.Discover{
+    padding-top: 100px
+}
+.DRight{
+    padding-top: 100px;
+}
+.DRight h1{
+    color: #6059f6;
+    font-size: 50px;
+    letter-spacing: -2px;
+    font-weight: 700;
+    font-family: "Roboto Condensed", sans-serif;
+}
+.DRight button{
+    margin-top: 30px;
+}
+.DRight p{
+    color: #636363
+}
+.Bhead{
+    text-align: center;
+}
+.Booking{
+    margin-top: 200px
+}
+.Bhead h2{
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 40px;
+    color:#2a2a2a;
+    font-weight: 700;
+    letter-spacing: -2px
+}
+.Bhead p{
+    color: #636363
+}

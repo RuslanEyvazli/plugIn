@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/Xindex.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+    .panel{
+        background: plum;
+        transition:all 0.4s ease;
+        height:0;
+        overflow: hidden;
+       
+    }
+    .accardion{
+        width: 100%;
+        padding: 10px
+    }
+    .accardion:hover,.accardion:active{
+        background: purple
+    }
+    </style>
+</head>
+<body>
+    <button class="accardion">
+        Accardion
+    </button>
+    <div class="panel">
+        <div class="container">
+                <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi autem quae temporibus facere consectetur reprehenderit quisquam laborum est alias labore iure deleniti, perferendis explicabo magni minus neque voluptates accusamus.
+                
+                        </p>
+        </div>
+      
+    </div>
+    <button class="accardion">
+        Accardion
+    </button>
+    <div class="panel">
+        <div class="container">
+                <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi autem quae temporibus facere consectetur reprehenderit quisquam laborum est alias labore iure deleniti, perferendis explicabo magni minus neque voluptates accusamus.
+
+                </p>
+        </div>
+      
+    </div>
+    <button class="accardion">
+        Accardion
+    </button>
+    <div class="panel">
+        <div class="container ">
+            <div class="text-center">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi autem quae temporibus facere consectetur reprehenderit quisquam laborum est alias labore iure deleniti, perferendis explicabo magni minus neque voluptates accusamus.</p> 
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi autem quae temporibus facere consectetur reprehenderit quisquam laborum est alias labore iure deleniti, perferendis explicabo magni minus neque voluptates accusamus.</p> 
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi autem quae temporibus facere consectetur reprehenderit quisquam laborum est alias labore iure deleniti, perferendis explicabo magni minus neque voluptates accusamus.</p> 
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi autem quae temporibus facere consectetur reprehenderit quisquam laborum est alias labore iure deleniti, perferendis explicabo magni minus neque voluptates accusamus.</p> 
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi autem quae temporibus facere consectetur reprehenderit quisquam laborum est alias labore iure deleniti, perferendis explicabo magni minus neque voluptates accusamus.</p> 
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi autem quae temporibus facere consectetur reprehenderit quisquam laborum est alias labore iure deleniti, perferendis explicabo magni minus neque voluptates accusamus.</p> 
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi autem quae temporibus facere consectetur reprehenderit quisquam laborum est alias labore iure deleniti, perferendis explicabo magni minus neque voluptates accusamus.</p> 
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi autem quae temporibus facere consectetur reprehenderit quisquam laborum est alias labore iure deleniti, perferendis explicabo magni minus neque voluptates accusamus.</p> 
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi autem quae temporibus facere consectetur reprehenderit quisquam laborum est alias labore iure deleniti, perferendis explicabo magni minus neque voluptates accusamus.</p> 
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi autem quae temporibus facere consectetur reprehenderit quisquam laborum est alias labore iure deleniti, perferendis explicabo magni minus neque voluptates accusamus.</p> 
+
+            </div>
+
+        </div>
+    </div>
+
+<script>
+    var acc =document.getElementsByClassName("accardion");
+    var r;
+    for(r=0; r<=acc.length ;r++ ){
+    acc[r].addEventListener("click", function(){
+    var panel=this.nextElementSibling;
+    if(panel.style.height=="60px"){
+        panel.style.height="0px"
+
+    }
+    else{ panel.style.height= "60px"
+
+    }
+    }
+    )
+    }
+    
+</script>
+</body>
+
+</html>

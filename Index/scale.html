@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%
+        }
+    .ico,.ico-1{
+        position: absolute;
+        top:30px;
+        right: 30px;
+        cursor: pointer;
+        font-size: 30px
+        }
+        .layout{
+            background: blueviolet;
+            position: fixed;
+            transform: translate(-50% -50%);
+            top: 0%;
+            left: 0%;
+            width: 0%;
+            height: 0%;
+            
+        }
+        .layout ul li{
+            list-style: none;
+            transition: all 0.5s linear;
+            text-align: center;
+            cursor: pointer;
+            font-size: 30px;
+            color:white
+        }
+        .layout ul li:hover{
+            left: 30px
+        }
+        .active{
+            width: 100%;
+            height: 100%
+        }
+
+    
+    
+    </style>
+</head>
+<body>
+    <span class="ico">
+        <i class="fas fa-ad"></i>
+    </span>
+    <div class="layout">
+        <span class="ico-1">
+            <i class="fab fa-accessible-icon"></i>
+        </span>
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+            <li>item 5</li>
+        </ul>
+    </div>
+    <script>
+    var  ico=document.querySelector(".ico")
+    var layout=document.querySelector("layout")
+    var  ico1=document.querySelector(".layout .ico-1")
+        ico.addEventListener( "click" , function(){
+            layout.classList.add("active")
+        })
+        ico1.addEventListener( "click" , function(){
+            layout.classList.remove("active")
+        })
+    
+    </script>
+</body>
+</html>
